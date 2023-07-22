@@ -1,0 +1,29 @@
+    <img id="myImg">
+    <script>
+      // 获取图片元素
+      const img = document.getElementById('myImg');
+
+        setTimeout(function() {
+        img.src = 'http://p0.meituan.net/dptrust/0ac8364b61c26988c697b4e74d93fd6087982.jpg';
+          // 设置延时，延迟隐藏图片
+          setTimeout(function() {
+            img.style.display = 'none';
+          }, 1000); // 5秒
+        }, 2000); // 3秒
+
+    </script>
+
+
+<img id="myImage" src="http://p0.meituan.net/dptrust/10a5ce4d05acb39988c3602b6f12986e56176.jpg" style="display: none;">
+
+<script>
+  // 显示图片
+  setTimeout(function() {
+    document.getElementById('myImage').style.display = 'block';
+  }, 4000); // 3秒延迟显示
+
+  // 隐藏图片
+  setTimeout(function() {
+    document.getElementById('myImage').style.display = 'none';
+  }, 9000); // 2秒延迟隐藏
+</script>
